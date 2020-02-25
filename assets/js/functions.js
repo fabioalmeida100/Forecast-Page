@@ -8,10 +8,10 @@ function dataAtualFormatada() {
         var hora = data.getHours();
         var minuto = data.getMinutes();
         if (parseInt(hora) < 10)
-            hora += '0' + hora;
+            hora = '0' + hora;
 
         if (parseInt(minuto) < 10)
-            minuto += '0' + minuto;
+            minuto = '0' + minuto;
 
 	return diaF + "/" + mesF + "/" + anoF + " às " + hora + ":" + minuto;
 }
