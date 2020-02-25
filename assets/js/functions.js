@@ -7,6 +7,11 @@ function dataAtualFormatada() {
         var anoF = data.getFullYear();
         var hora = data.getHours();
         var minuto = data.getMinutes();
+        if (parseInt(hora) < 10)
+            hora += '0' + hora;
+
+        if (parseInt(minuto) < 10)
+            minuto += '0' + minuto;
 
 	return diaF + "/" + mesF + "/" + anoF + " às " + hora + ":" + minuto;
 }
@@ -23,10 +28,10 @@ $(document).ready(function() {
         dataType: "json",
         url: 'https://cors-anywhere.herokuapp.com/' + urlRequest,
         success: function(result){
-            $("#temperature").html(`Temperatura - ${result.data.temperature} C`);
-            $("#wind_direction").html(`Dir. do vento - ${result.data.wind_direction}`);
-            $("#wind_velocity").html(`Vento - ${result.data.wind_velocity} Km/h`);
-            $("#humidity").html(`Humidade - ${result.data.humidity} %`);
-            $("#condition").html(`Condição - ${result.data.condition}`);
+            $("#temperature").html(`Temperatura: ${result.data.temperature} C`);
+            $("#wind_direction").html(`Dir. do vento: ${result.data.wind_direction}`);
+            $("#wind_velocity").html(`Vento: ${result.data.wind_velocity} Km/h`);
+            $("#humidity").html(`Humidade: ${result.data.humidity} %`);
+            $("#condition").html(`Condição: ${result.data.condition}`);
     }});
 });
