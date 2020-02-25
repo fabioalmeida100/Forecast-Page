@@ -24,7 +24,7 @@ $(document).ready(function() {
         url: 'https://cors-anywhere.herokuapp.com/' + urlRequest,
         success: function(result){
             $("#temperature").html(`Temperatura - ${result.data.temperature} C`);
-            $("#wind_direction").html(`Dir. do vento - ${result.data.wind_direction} C`);
+            $("#wind_direction").html(`Dir. do vento - ${result.data.wind_direction}`);
             $("#wind_velocity").html(`Vento - ${result.data.wind_velocity} Km/h`);
             $("#humidity").html(`Humidade - ${result.data.humidity} %`);
             $("#condition").html(`Condição - ${result.data.condition}`);
