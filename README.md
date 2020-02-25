@@ -11,7 +11,7 @@ Neste projeto foi utilizado o Boostrap com o conceito de *flex box* . Além diss
 
 # Screenshoot do projeto
 
-![Screenshot do projeto rodando](https://raw.githubusercontent.com/fabioalmeida100/Forecast-Page/master/assets/img/screenshoot_v1.0.png)
+![Screenshot do projeto rodando](https://raw.githubusercontent.com/fabioalmeida100/ForecastWeather/master/assets/img/screenshoot_v1.0.png)
 
 # Projeto em funcionamento
 [Clique aqui](https://fabiodeveloper.com/projects/forecast/index.html) para ver o projeto em funcionamento
