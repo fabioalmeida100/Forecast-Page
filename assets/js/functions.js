@@ -22,11 +22,16 @@ $(document).ready(function() {
     var urlRequest = 
         "http://apiadvisor.climatempo.com.br/api/v1/weather/locale/6015/current?token=3b078bb9aa643f40996c162055ef7f92";
     
+	var queryURL = "https://cors-anywhere.herokuapp.com/" + urlRequest;
+    
     $.ajax({
         type: "GET",
         contentType: "application/json;charset=utf-8",
         dataType: "json",
-        url: 'https://cors-anywhere.herokuapp.com/' + urlRequest,
+	    headers: {
+			"x-requested-with": "xhr" 
+		  },
+        url: queryURL,
         success: function(result){
             $("#temperature").html(`Temperatura: ${result.data.temperature} C`);
             $("#wind_direction").html(`Dir. do vento: ${result.data.wind_direction}`);
