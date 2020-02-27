@@ -1,4 +1,4 @@
-# Forecast Weather (v.1.0.0.0)
+# Forecast Weather
 Este é um projeto que consume uma API que retorna dados meteológicos de uma cidade. Inicialmente, devidos a limitações de uso da atual API estou consumindo os dados de apenas uma cidade. 
 
 # Tecnologias utilizadas
