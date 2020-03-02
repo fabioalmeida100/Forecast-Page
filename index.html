@@ -20,19 +20,22 @@
                 <div class="d-flex">
                     <p class="h6 font-weight-light font-italic">Dados sobre o clima agora</p> 
                 </div>
-
-                <div class="d-flex">
-                    <div class="d-flex align-items-center bg" style="height: 200px">
-                        <p class="h5">Dados meteorológicos</p>
-                        <ul class="list-unstyled" id="lista-dados">
-                            <li id="temperature">Temperatura: 00 C</li>
-                            <li id="wind_direction">Dir. do vento: NNE</li>
-                            <li id="wind_velocity">Vento: 0 Km/h</li>
-                            <li id="humidity">Humidade: 0 %</li>
-                            <li id="condition">Condição: -</li>
-                        </ul>
+       
+                <div class="d-flex align-items-center" style="height: 200px">
+                    <p class="h5">Dados meteorológicos</p>             
+                 
+                    <div class="spinner-border m-5" role="status" id="loading">
+                        <span class="sr-only">Loading...</span>
                     </div>
-                </div>               
+                   
+                    <ul class="list-unstyled" id="lista-dados">
+                        <li id="temperature"></li>
+                        <li id="wind_direction"></li>
+                        <li id="wind_velocity"></li>
+                        <li id="humidity"></li>
+                        <li id="condition"></li>
+                    </ul>                    
+                </div>                            
             </header>   
         </div>
         <footer class="d-flex justify-content-center text-center align-items-end">         

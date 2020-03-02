@@ -33,6 +33,7 @@ $(document).ready(function() {
 		  },
         url: queryURL,
         success: function(result){
+            $('#loading').hide();
             $("#temperature").html(`Temperatura: ${result.data.temperature} C`);
             $("#wind_direction").html(`Dir. do vento: ${result.data.wind_direction}`);
             $("#wind_velocity").html(`Vento: ${result.data.wind_velocity} Km/h`);
